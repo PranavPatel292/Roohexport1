@@ -1,6 +1,4 @@
 import { ProductCard } from "./ProductCard";
-// components/ProductGrid.tsx
-import React from "react";
 
 // Define the shape of a product object
 interface Product {

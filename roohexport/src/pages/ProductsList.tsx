@@ -1,8 +1,4 @@
-import { ArrowRight, Menu, Phone, ShoppingBag } from "lucide-react";
-
-import { Button } from "@/components/ui/button";
 import { ProductGrid } from "@/components/sections/ProductGrid";
-import React from "react";
 
 // Assuming you have a button component, if not, standard <button> works too.
 
