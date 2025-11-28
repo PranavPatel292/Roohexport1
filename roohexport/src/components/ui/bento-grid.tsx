@@ -55,7 +55,7 @@ const BentoCard = ({
     <div className="h-full w-full">{background}</div>
 
     {/* Gradient Overlay (To make text readable) */}
-    <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+    <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent" />
 
     {/* Title Section */}
     <div className="absolute bottom-0 left-0 p-6 transition-all duration-300 group-hover:translate-x-2">
