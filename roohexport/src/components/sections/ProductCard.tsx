@@ -1,6 +1,3 @@
-// components/ProductCard.tsx
-import React from "react";
-
 interface ProductProps {
   image: string;
   name: string;
@@ -12,7 +9,7 @@ export const ProductCard = ({ image, name, price, tag }: ProductProps) => {
   return (
     <div className="group cursor-pointer flex flex-col h-full">
       {/* Image Container */}
-      <div className="relative aspect-[3/4] overflow-hidden rounded-md bg-stone-200 mb-4">
+      <div className="relative aspect-3/4 overflow-hidden rounded-md bg-stone-200 mb-4">
         <img
           src={image}
           alt={name}
