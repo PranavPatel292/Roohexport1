@@ -1,5 +1,7 @@
 import { Mail, MapPin, Phone, Send } from "lucide-react";
 
+import { ShineBorder } from "@/components/ui/shine-border";
+
 export default function ContactPage() {
   return (
     <div className="flex min-h-screen flex-col md:flex-row bg-stone-50 font-sans text-stone-800">
@@ -20,10 +22,12 @@ export default function ContactPage() {
         <div className="flex-1 px-8 pb-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* --- LEFT COLUMN: Info & Map --- */}
+
             <div className="space-y-8">
               {/* Contact Details */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div className="bg-white p-6 rounded-sm border border-stone-100">
+                <div className="relative bg-white p-6 rounded-sm border border-stone-100">
+                  <ShineBorder shineColor={["#A07CFE", "#FE8FB5", "#FFBE7B"]} />
                   <div className="flex items-center gap-3 text-stone-400 mb-2">
                     <Phone size={20} />
                     <span className="text-xs font-bold uppercase tracking-wider">
@@ -35,7 +39,8 @@ export default function ContactPage() {
                   </p>
                 </div>
 
-                <div className="bg-white p-6 rounded-sm border border-stone-100">
+                <div className="relative bg-white p-6 rounded-sm border border-stone-100">
+                  <ShineBorder shineColor={["#A07CFE", "#FE8FB5", "#FFBE7B"]} />
                   <div className="flex items-center gap-3 text-stone-400 mb-2">
                     <Mail size={20} />
                     <span className="text-xs font-bold uppercase tracking-wider">
@@ -55,7 +60,6 @@ export default function ContactPage() {
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.9537353153169!3d-37.81732767975171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577d6a32f62973b!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1645672892345!5m2!1sen!2sau"
                   width="100%"
                   height="100%"
-                  style={{ border: 0, filter: "grayscale(100%) opacity(0.8)" }} // Grayscale to match theme
                   allowFullScreen={false}
                   loading="lazy"
                   className="group-hover:grayscale-0 transition-all duration-500" // Color on hover
@@ -65,7 +69,7 @@ export default function ContactPage() {
                 <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur px-4 py-2 flex items-center gap-2 shadow-sm rounded-sm">
                   <MapPin size={16} className="text-stone-900" />
                   <span className="text-sm font-medium">
-                    123 Silk Road, Dubai
+                    Surat, Gujarat, India.
                   </span>
                 </div>
               </div>
