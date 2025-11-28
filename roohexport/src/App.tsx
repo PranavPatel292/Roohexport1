@@ -1,9 +1,11 @@
 import { Home } from "./pages/Home";
+import ProductListingPage from "./pages/ProductsList";
 
 function App() {
   return (
     <>
-      <Home />
+      <ProductListingPage />
+      {/* <Home /> */}
     </>
   );
 }
