@@ -54,7 +54,7 @@ const HeroCarousel = () => {
               className="relative flex-[0_0_100%] min-w-0 h-full"
             >
               {/* Dark Overlay for text readability */}
-              <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/20 to-transparent z-10 pointer-events-none" />
+              <div className="absolute inset-0 bg-linear-to-r from-black/70 via-black/20 to-transparent z-10 pointer-events-none" />
 
               <img
                 src={item.image}
