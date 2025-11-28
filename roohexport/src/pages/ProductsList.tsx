@@ -1,11 +1,12 @@
 import { ArrowRight, Menu, Phone, ShoppingBag } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
+import { ProductGrid } from "@/components/sections/ProductGrid";
 import React from "react";
 
 // Assuming you have a button component, if not, standard <button> works too.
 
-const products = [
+const productsData = [
   {
     id: 1,
     name: "The Royal Silk Kaftan",
@@ -79,42 +80,7 @@ export default function ProductListingPage() {
             - sm:grid-cols-2: Tablet (2 columns)
             - lg:grid-cols-3: Desktop (3 columns) 
           */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-x-8 gap-y-12">
-            {products.map((product) => (
-              <div key={product.id} className="group cursor-pointer">
-                {/* Image Container */}
-                <div className="relative aspect-[3/4] overflow-hidden rounded-md bg-stone-200 mb-4">
-                  <img
-                    src={product.image}
-                    alt={product.name}
-                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  {/* Tag Overlay */}
-                  {product.tag && (
-                    <span className="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-3 py-1 text-xs font-semibold uppercase tracking-wider">
-                      {product.tag}
-                    </span>
-                  )}
-                  {/* Hover Add to Cart Button */}
-                  <div className="absolute bottom-4 left-4 right-4 translate-y-full opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
-                    <button className="w-full bg-white text-black py-3 font-medium shadow-lg hover:bg-stone-900 hover:text-white transition-colors">
-                      More information
-                    </button>
-                  </div>
-                </div>
-
-                {/* Product Details */}
-                <div className="flex justify-between items-start">
-                  <div>
-                    <h3 className="text-lg font-medium text-stone-900 group-hover:underline decoration-stone-400 underline-offset-4">
-                      {product.name}
-                    </h3>
-                    <p className="text-stone-500 mt-1">{product.price}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
+          <ProductGrid products={productsData} />
         </div>
       </main>
     </div>
