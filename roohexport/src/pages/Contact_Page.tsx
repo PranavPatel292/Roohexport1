@@ -141,19 +141,6 @@ export default function ContactPage() {
             </div>
           </div>
         </div>
-
-        {/* Footer (from your sketch) */}
-        <footer className="border-t border-stone-200 bg-white p-8 text-center md:text-left md:flex justify-between items-center text-stone-500 text-sm mt-auto">
-          <p>© 2024 Kaftan Collection. All rights reserved.</p>
-          <div className="flex gap-6 mt-4 md:mt-0 justify-center">
-            <a href="#" className="hover:text-black">
-              Privacy Policy
-            </a>
-            <a href="#" className="hover:text-black">
-              Terms of Service
-            </a>
-          </div>
-        </footer>
       </main>
     </div>
   );
