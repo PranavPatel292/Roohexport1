@@ -1,7 +1,7 @@
 import { Menu, ShoppingBag, X } from "lucide-react";
-import React, { useState } from "react";
 
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +18,7 @@ export const Navbar = () => {
       <div className="mx-auto max-w-7xl px-6 sm:px-8">
         <div className="flex h-20 items-center justify-between">
           {/* --- LOGO SECTION --- */}
-          <div className="flex-shrink-0 cursor-pointer">
+          <div className="shrink-0 cursor-pointer">
             <Link to="/">
               <div className="bg-black h-12 w-12 flex items-center justify-center text-center p-1">
                 <span className="text-[10px] text-amber-200 font-serif leading-tight">
